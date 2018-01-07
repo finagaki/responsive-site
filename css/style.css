@@ -1,3 +1,99 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Abel);
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #182833;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
+
+.block-center, #skills, #contact a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.text-center, #contact a {
+  text-align: center; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.abel {
+  font-family: 'Abel', sans-serif; }
+
+#top {
+  background-image: url("../images/top.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+  width: 100%; }
+
+#skills {
+  padding: 30px 0;
+  width: 90%; }
+  #skills .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  #skills h1 {
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+    color: #F6EDD3; }
+  #skills .skill-box {
+    background-color: #05080A;
+    padding: 20px;
+    margin: 10px 0;
+    -webkit-flex: 1;
+    flex: 1;
+    /*
+    flex: 1;
+    flex: 1 1 0;
+    と同じ意味。
+    flex: <伸ばすときの比率> <縮めるときの比率> <最低でも確保したい幅>;
+    */
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    #skills .skill-box h2 {
+      font-size: 3rem;
+      color: #F6EDD3;
+      padding-bottom: 15px; }
+    #skills .skill-box p {
+      color: #F6EDD3;
+      font-size: 1.5rem; }
+
+#contact {
+  background-color: #05080A;
+  padding: 30px; }
+  #contact h3 {
+    font-size: 2.5rem;
+    color: #F6EDD3; }
+  #contact a {
+    width: 200px;
+    font-size: 2rem;
+    color: #F6EDD3;
+    background-color: #182833;
+    margin: 20px auto;
+    padding: 10px 0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-decoration: none; }
+
+@media (min-width: 769px) {
+  #top {
+    height: 500px; }
+
+  #skills .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+    #skills .container .skill-box {
+      margin: 0 10px; } }
 
 /*# sourceMappingURL=style.css.map */
